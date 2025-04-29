@@ -3,81 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card with Side Green Highlight</title>
-    <style>
-        /* Styling the card container */
-        .card {
-            display: flex;
-            align-items: center;
-            background-color: #f8f9fa; /* Light background for contrast */
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-            overflow: hidden;
-            width: 400px;
-        }
-
-        /* Styling the green highlight section */
-        .highlight {
-            background-color: #00c853; /* Green background */
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* width: 200px; Fixed width for the green section */
-            width: 200px;
-            height: 150px;
-        }
-
-        /* Styling the number inside the green section */
-        .number {
-            font-size: 2em;
-            font-weight: bold;
-            padding-left: 20px;
-            text-align: center;
-            
-        }
-
-        /* Styling for the content area (text and title) */
-        .content {
-            padding: 20px;
-        }
-
-        /* Title styling */
-        .title {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        /* Descriptive text styling */
-        .text {
-            font-size: 1em;
-            color: #333;
-        }
-    </style>
+    <title>Our Approach</title>
+    <link rel="stylesheet" href="styletest.css">
 </head>
 <body>
-    <!-- First card -->
-    <div class="card">
-        <div class="highlight">
-            <div class="number">1</div>
+    <section class="approach-section">
+        <h1 class="section-title">Our Approach</h1>
+        <div class="steps-container">
+            <div class="step">
+                <h2>Define</h2>
+                <p>We diagnose and assess your challenges and needs based on our real experiences.</p>
+            </div>
+            <div class="step arrow">
+                <h2>Create</h2>
+                <p>We design practical project templates that can respond to your needs.</p>
+            </div>
+            <div class="step arrow">
+                <h2>Deliver</h2>
+                <p>All services will be delivered in a timely manner and practical way.</p>
+            </div>
+            <div class="step">
+                <h2>Sustain</h2>
+                <p>Our tailored solutions and coaching will allow you to handle the operation yourself next time.</p>
+            </div>
         </div>
-        <div class="content">
-            <div class="title">Financial Literacy Gaps</div>
-            <div class="text">SME owners or managers may not have a deep understanding of financial management practices, which can lead to improper financial reporting and decision-making.</div>
-        </div>
-    </div>
-
-    <!-- Second card -->
-    <div class="card">
-        <div class="highlight">
-            <div class="number">2</div>
-        </div>
-        <div class="content">
-            <div class="title">Misunderstanding of Key Financial Metrics</div>
-            <div class="text">Many SMEs fail to track crucial financial metrics like cash flow, profitability, or debt ratios.</div>
-        </div>
-    </div>
+    </section>
 </body>
 </html>

@@ -153,7 +153,7 @@ nav button#menuButton{
 .hero .hero-content{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
 }
 
 .hero .hero-content h3{
@@ -162,9 +162,6 @@ nav button#menuButton{
     font-size: 46px;
 }
 
-.hero .hero-content h3 span{
-    color: #06EA93;
-}
 
 .skills h5 span{
     color: #06EA93;
@@ -219,6 +216,7 @@ nav button#menuButton{
     display: center;
     align-items: center;
     margin-top: 50px;
+    padding-top: 40px;
 }
 
 .about p{
@@ -365,20 +363,27 @@ nav button#menuButton{
 .services {
     text-align: center;
     padding: 50px 20px;
-    background: url('assets/image/hero_background.png') no-repeat center center/cover;
+    /* background: url('assets/image/hero_background.png') no-repeat center center/cover; */
     color: white;
   }
   
 .services h1 {
-    color: #06EA93;
-    margin: 20px;
+    color: black;
+    margin: 30px;
+}
+
+.service-cards h2 {
+    color: black;
+    font-size: 40px;
 }
 
 .services p {
-    margin: 30px 0;
-    line-height: 1;
-    color: #f2f2f2;
+    /* margin: 10px 0; */
+    line-height: 1.5;
+    color: black;
     font-size: 14px;
+    text-align: justify;
+    margin: 10px;
 }
 
 .services li {
@@ -399,28 +404,111 @@ nav button#menuButton{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 250px;
-    height: 400px; /* Set a fixed height for uniform card sizes */
+    height: 340px; /* Set a fixed height for uniform card sizes */
     padding: 20px;
     display: flex;
     flex-direction: column; /* Arrange content vertically */
     justify-content: space-between; /* Ensure spacing between top, middle, and bottom */
-    text-align: left;
+    /* text-align: left; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
   .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(6, 234, 147, 0.2);
 }
   
 
-.card .icon {
-    height: 50px;
+.card .icon img{
     width: 50px;
-    /* display: flex; */
-    /* align-items: center; */
+    height: 50px;
 }
 
+.services1 {
+        text-align: center;
+        padding: 50px 20px;
+        background: url('assets/image/hero_background.png') no-repeat center center/cover;
+        color: white;
+        height: 400px;
+ }
+
+ .services1 h1{
+    color: #06EA93;
+ }
+
+ .services1 .photo_approach img {
+    align-items: center;
+    /* display: flex; */
+    padding: 50px;
+ }
+
+
+
+ .team {
+    text-align: center;
+    padding: 50px 20px;
+    /* background: url('assets/image/hero_background.png') no-repeat center center/cover; */
+    color: white;
+  }
+  
+.team h1 {
+    color: black;
+    margin: 30px;
+}
+
+.team-cards h2 {
+    color: black;
+    font-size: 40px;
+    text-align: justify;
+    padding-left: 10px;
+}
+
+.team p {
+    /* margin: 10px 0; */
+    line-height: 1.5;
+    color: black;
+    font-size: 14px;
+    text-align: justify;
+    margin: 10px;
+}
+
+
+
+  .team-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .team .card {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 850px; /* Set a fixed height for uniform card sizes */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: space-between; /* Ensure spacing between top, middle, and bottom */
+    /* text-align: left; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(6, 234, 147, 0.2);
+}
+  
+
+.card .people img{
+    width: 350px;
+    height: 350px;
+}
+
+
+ --------------------------------
   .accounting {
     background: url('accounting-icon.png') no-repeat center center;
     background-size: contain;
@@ -975,356 +1063,7 @@ footer {
 ---------------------------------------------------------
 
 
-
-/* 
-.portfolio{
-    background-color: #deebee;
-    padding: 110px 85px;
-}
-
-.portfolio .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 60px;
-}
-
-.portfolio .header button{
-    background-color: #ff0000;
-    padding: 10px 20px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    gap: 8px;
-    border: none;
-    border-radius: 10px;
-}
-
-.portfolio .header button i{
-    font-size: 26px;
-}
-
-.portfolio .portfo-items{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.portfolio .portfo-items .item{
-    width: 30%;
-    background-color: #fff;
-    border-radius: 10px;
-    border-bottom: 4px solid transparent;
-    cursor: pointer;
-    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
-}
-
-.portfolio .portfo-items .item:hover{
-    border-color: #5e3bee;
-}
-
-.portfolio .portfo-items .item img{
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 10px 10px 20px 20px;
-}
-
-.portfolio .portfo-items .item .info{
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    padding: 20px 32px 42px;
-}
-
-.portfolio .portfo-items .item .info p{
-    font-size: 13px;
-}
-
-.portfolio .portfo-items .item .info a{
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-color: #5e3bee;
-}
-
-.portfolio .portfo-items .item .info a i{
-    margin-left: 2px;
-    font-size: 16px;
-}
-
-.feedback{
-    padding: 110px 85px;
-}
-
-.feedback .customers{
-    margin-top: 50px;
-    display: flex;
-    gap: 40px;
-}
-
-.feedback .customers .item{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border: 2px solid #006b6a;
-    border-radius: 10px;
-    padding: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.feedback .customers .item .rating{
-    color: #006b6a;
-    font-size: 22px;
-}
-
-.feedback .customers .item:hover{
-    border-color: #5e3bee;
-}
-
-.feedback .customers .item p{
-    line-height: 22px;
-    font-size: 14px;
-}
-
-.feedback .customers .item .user{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.feedback .customers .item .user img{
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.feedback .customers .item .user h5{
-    font-size: 13px;
-    font-weight: 500;
-    margin-bottom: 3px;
-}
-
-.feedback .customers .item .user p{
-    font-size: 12px;
-}
-
-footer{
-    background-color: #deebee;
-    padding: 85px;
-    display: flex;
-    flex-direction: column;
-}
-
-footer .top,
-footer .bottom{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-footer .top .social-links{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 22px;
-}
-
-footer .separator{
-    width: 100%;
-    height: 1px;
-    background-color: #282938;
-    margin: 30px 0 20px;
-}
-
-footer .bottom p{
-    font-size: 12px;
-}
-
-footer .bottom .links a{
-    font-size: 12px;
-    margin-left: 14px;
-}
-
-@media screen and (max-width: 1200px) {
-    
-    .hero .left h5{
-        font-size: 18px;
-    }
-
-    .hero .left h3{
-        font-size: 36px;
-    }
-
-    .hero .left p{
-        font-size: 18px;
-    }
-
-    .hero .right img{
-        width: 380px;
-    }
-
-    .skills .skill-items{
-        gap: 10px;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .skills .skill-items .item{
-        width: 49%;
-    }
-
-    .about .left img{
-        width: 370px;
-    }
-
-    .skills h3,
-    .about .right h3,
-    .portfolio .header h3,
-    .feedback h3{
-        font-size: 32px;
-    }
-
-    .about .right p{
-        font-size: 15px;
-    }
-
-    .feedback .customers .item .rating{
-        font-size: 20px;
-    }
-
-    .feedback .customers .item p{
-        font-size: 13px;
-    }
-
-    footer .top ul{
-        gap: 20px;
-    }
-
-}
-
-@media screen and (max-width: 992px) {
-    
-    nav button{
-        display: none;
-    }
-
-    nav ul{
-        gap: 20px;
-    }
-
-    nav ul li a{
-        font-size: 15px;
-    }
-
-    .hero{
-        flex-direction: column;
-    }
-
-    .about{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .portfolio .portfo-items{
-        gap: 22px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .portfolio .portfo-items .item{
-        width: 48%;
-    }
-
-    .feedback .customers{
-        gap: 14px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .feedback .customers .item{
-        width: 48%;
-    }
-
-    footer .top ul{
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    
-    nav{
-        justify-content: space-between;
-        padding: 0 42px;
-    }
-
-    nav ul{
-        display: none;
-    }
-
-    nav.logo{
-        display: flex;
-        height: 120px;
-        width: 120px;
-    }
-
-    nav.open .logo{
-        display: none;
-    }
-
-    nav.open ul{
-        display: flex;
-    }
-
-    nav button#menuButton{
-        display: flex;
-    }
-
-    .hero{
-        padding: 42px;
-    }
-
-    .skills{
-        padding: 85px 42px 0;
-    }
-
-    .skills .skill-items{
-        gap: 8px;
-    }
-
-    .about{
-        padding: 85px 42px;
-    }
-
-    .portfolio{
-        padding: 60px 42px;
-    }
-
-    .portfolio .portfo-items{
-        gap: 18px;
-    }
-
-    .feedback{
-        padding: 85px 42px;
-    }
-
-    footer{
-        padding: 85px 42px;
-    }
-
-    footer .bottom{
-        flex-direction: column-reverse;
-        gap: 14px;
-    }
-
-} */
-
-@media screen and (max-width: 576px) { {}
+@media screen and (max-width: 576px) {
     
     nav ul li a{
         font-size: 13px;
